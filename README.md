@@ -1,6 +1,3 @@
-# Self-supervised fusion of deep soft assignments for multi-view diagnosis of machine faults
-This repository is the official implementation of Self-supervised fusion of deep soft assignments for multi-view diagnosis of machine faults (DSAFN).
-# Abstract
-Fault patterns are often unavailable for machine fault diagnosis without prior knowledge. It is therefore challenging to diagnose the existence of machine faults and their types. For this reason, a novel scheme of deep soft assignment fusion network (DSAFN) is proposed for the multi-view diagnosis of machine faults with a self supervised manner. To alleviate the overfitting problem, random noise is added to the collected signals to enhance the robustness of the present model. In each view, vibration features are extracted by a denoising autoencoder. With the extracted deep features, a soft assignment fusion strategy is proposed to make full use of both the public and the complementary information of multiple views. Critical diagnosis missions of novel fault detection and fault clustering are realized by binary clustering and multi-class clustering of DSAFN, respectively. To verify the addressed method, two diagnosis experiments were carried out. Compared with the-state-of-the-art peer methods, the results show that the proposed method is superior in terms of diagnostic accuracy and noise robustness.
+
 
 
