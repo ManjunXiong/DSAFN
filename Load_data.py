@@ -28,8 +28,8 @@ def CWRU_V2():
     np.random.shuffle(index)
     x1 = x1[index]
     x2 = x2[index]
-    x1 = gaussian_noise_layer(x1, 0.001)
-    x2 = gaussian_noise_layer(x2, 0.001)
+    x1 = gaussian_noise_layer(x1, 0.01)
+    x2 = gaussian_noise_layer(x2, 0.01)
     Y = Y.reshape(15000, )
     # print(Y1)
     # print(Y1.shape)
@@ -54,9 +54,9 @@ def CWRU_V3():
     x1 = x1[index]
     x2 = x2[index]
     x3 = x3[index]
-    x1 = gaussian_noise_layer(x1, 0.001)
-    x2 = gaussian_noise_layer(x2, 0.001)
-    x3 = gaussian_noise_layer(x3, 0.001)
+    x1 = gaussian_noise_layer(x1, 0.01)
+    x2 = gaussian_noise_layer(x2, 0.01)
+    x3 = gaussian_noise_layer(x3, 0.01)
     Y = Y.reshape(15000, )
     Y = Y[index]
     Y = Y.reshape(1, 15000)
@@ -78,9 +78,9 @@ def N_CWRU_V3():
     x1 = x1[index]
     x2 = x2[index]
     x3 = x3[index]
-    x1 = gaussian_noise_layer(x1, 0.001)
-    x2 = gaussian_noise_layer(x2, 0.001)
-    x3 = gaussian_noise_layer(x3, 0.001)
+    x1 = gaussian_noise_layer(x1, 0.01)
+    x2 = gaussian_noise_layer(x2, 0.01)
+    x3 = gaussian_noise_layer(x3, 0.01)
     Y = Y.reshape(6000, )
     Y = Y[index]
     Y = Y.reshape(1, 6000)
@@ -100,8 +100,8 @@ def N_CWRU_V2():
     np.random.shuffle(index)
     x1 = x1[index]
     x2 = x2[index]
-    x1 = gaussian_noise_layer(x1, 0.001)
-    x2 = gaussian_noise_layer(x2, 0.001)
+    x1 = gaussian_noise_layer(x1, 0.01)
+    x2 = gaussian_noise_layer(x2, 0.01)
     Y = Y.reshape(6000, )
     Y = Y[index]
     Y = Y.reshape(1, 6000)
@@ -161,8 +161,8 @@ def GS_V2():
     print("dataset GS")
     x1 = data['X1']
     x2 = data['X2']
-    x1 = gaussian_noise_layer(x1, 0.001)
-    x2 = gaussian_noise_layer(x2, 0.001)
+    x1 = gaussian_noise_layer(x1, 0.01)
+    x2 = gaussian_noise_layer(x2, 0.01)
     Y = data['Y'][0]
     print(x1.shape)
     print(x2.shape)
